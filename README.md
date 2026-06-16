@@ -1,24 +1,50 @@
 # Career Copilot
 
-An AI-powered job search automation platform that continuously discovers, evaluates, and tracks job opportunities across multiple sources.
+AI-powered job hunting workflow built with n8n, Playwright, NeonDB, and LLMs.
 
-The workflow uses VisualCode to fetch jobs, n8n for automation, NeonDB for job storage, and LLMs for intelligent job relevance scoring. Jobs are automatically filtered based on user-defined preferences, eliminating irrelevant opportunities and surfacing only high-quality matches.
+## Overview
 
-## Features
+Career Copilot automates the entire job discovery process:
 
-* Automated job discovery
-* AI-powered relevance scoring
-* Personalized job filtering
-* Duplicate job detection
-* NeonDB job storage
-* Automated email notifications
-* Workflow orchestration using n8n
-* Scalable and extensible architecture
+1. Search jobs automatically
+2. Scrape job details
+3. Score jobs using AI by comparing with resume
+4. Store results in NeonDB
+5. Send relevant jobs alerts via mail
 
 ## Tech Stack
 
-* n8n
-* NeonDB (PostgreSQL)
-* Gemini/OpenAI APIs
-* JavaScript
-* VS Code
+- n8n
+- Playwright
+- NeonDB
+- Gemini/OpenAI
+- JavaScript
+- VS Code
+
+## Architecture
+
+Job Search
+↓
+Playwright Scraping
+↓
+Resume Information
+↓
+AI Relevance Scoring based on Resume
+↓
+NeonDB Storage
+↓
+Email Alert for everyday's job posting
+
+## Repository Structure
+
+```text
+workflows/
+sql/
+scripts/
+docs/
+```
+
+## Future Improvements
+
+- LinkedIn integration
+- Dashboard analytics
