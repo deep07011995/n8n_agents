@@ -1,0 +1,10 @@
+CREATE TABLE scored_jobs (
+    job_id      TEXT PRIMARY KEY,
+    title       TEXT,
+    company     TEXT,
+    location    TEXT,
+    job_url     TEXT,
+    score       INTEGER,
+    reason      TEXT,
+    created_at  DATE DEFAULT CURRENT_DATE
+);
